@@ -1,12 +1,10 @@
-import { useState } from "react"
 import reactLogo from "./assets/react.svg"
+import DaisyPreview from "./DaisyPreview"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="m-6">
-      <div className="flex">
+    <div className="mt-2">
+      <div className="flex mx-6">
         <button>
           <img src="/vite.svg" alt="Vite logo" />
         </button>
@@ -14,18 +12,8 @@ function App() {
           <img src={reactLogo} alt="React logo" />
         </button>
       </div>
-      <h1>Vite + React + TailwindCSS</h1>
-      <div className="my-4">
-        <button
-          className="btn btn-sm btn-outline"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1 className="mx-6">Vite + React + TailwindCSS + DaisyUI</h1>
+      <DaisyPreview />
     </div>
   )
 }
