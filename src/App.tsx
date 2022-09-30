@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='p-6 bg-amber-50'>
+    <div className='m-6'>
       <div className='flex'>
         <button>
           <img src="/vite.svg" alt="Vite logo" />
@@ -15,8 +15,8 @@ function App() {
         </button>
       </div>
       <h1>Vite + React + TailwindCSS</h1>
-      <div className="text-emerald-800">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className='my-4'>
+        <button className="btn btn-sm btn-outline" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
