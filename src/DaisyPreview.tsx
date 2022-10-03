@@ -4,9 +4,10 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
   return (
     <div
-      className="not-prose rounded-box grid gap-3 border border-base-content/5 bg-base-100 p-6 text-base-content"
+      className="not-prose rounded-box grid gap-3 border border-base-content/5 bg-base-100 px-6 py-4 text-base-content"
       data-theme={props.theme}
     >
+      <h1>DaisyUI Preview - {props.theme} theme</h1>
       <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
         <button className="btn">Default</button>
         <button className="btn btn-primary">Primary</button>
