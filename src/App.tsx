@@ -4,7 +4,7 @@ import DaisyPreview from "./DaisyPreview"
 function App() {
   return (
     <div className="mt-2">
-      <div className="flex mx-6">
+      <div className="mx-6 flex">
         <button>
           <img src="/vite.svg" alt="Vite logo" />
         </button>

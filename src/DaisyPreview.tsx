@@ -1,7 +1,7 @@
 function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
   return (
     <div
-      className="rounded-box bg-base-100 border-base-content/5 text-base-content not-prose grid gap-3 border p-6"
+      className="not-prose rounded-box grid gap-3 border border-base-content/5 bg-base-100 p-6 text-base-content"
       data-theme={props.theme}
     >
       <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
@@ -13,6 +13,12 @@ function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
         <button className="btn btn-success">Success</button>
         <button className="btn btn-warning">Warning</button>
         <button className="btn btn-error">Error</button>
+      </div>
+      <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4">
+        <button className="btn btn-outline">Default</button>
+        <button className="btn btn-outline btn-primary">Primary</button>
+        <button className="btn btn-outline btn-secondary">Secondary</button>
+        <button className="btn btn-outline btn-accent">Accent</button>
       </div>
       <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4">
         <span className="badge">Default</span>
@@ -29,14 +35,16 @@ function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
           <div className="md:w-1/2">
             <div className="tabs">
               <button className="tab tab-lifted">Tab</button>
-              <button className="tab tab-lifted tab-active">Tab</button>
+              <button className="tab tab-active tab-lifted">Tab</button>
               <button className="tab tab-lifted">Tab</button>
             </div>
             <div className="flex flex-col">
-              <span className="link">I'm a simple link</span>
-              <span className="link link-primary">I'm a simple link</span>
-              <span className="link link-secondary">I'm a simple link</span>
-              <span className="link link-accent">I'm a simple link</span>
+              <span className="link">I&apos;m a simple link</span>
+              <span className="link link-primary">I&apos;m a simple link</span>
+              <span className="link link-secondary">
+                I&apos;m a simple link
+              </span>
+              <span className="link link-accent">I&apos;m a simple link</span>
             </div>
           </div>
           <div className="flex flex-col gap-3 md:w-1/2">
@@ -123,19 +131,19 @@ function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
               type="range"
               min={0}
               max={100}
-              className="range range-xs range-primary"
+              className="range range-primary range-xs"
             />
             <input
               type="range"
               min={0}
               max={100}
-              className="range range-xs range-secondary"
+              className="range range-secondary range-xs"
             />
             <input
               type="range"
               min={0}
               max={100}
-              className="range range-xs range-accent"
+              className="range range-accent range-xs"
             />
           </div>
         </div>
@@ -149,45 +157,45 @@ function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
             <input
               type="text"
               placeholder="Primary"
-              className="input input-primary input-bordered w-full"
+              className="input input-bordered input-primary w-full"
             />
             <input
               type="text"
               placeholder="Secondary"
-              className="input input-secondary input-bordered w-full"
+              className="input input-bordered input-secondary w-full"
             />
             <input
               type="text"
               placeholder="Accent"
-              className="input input-accent input-bordered w-full"
+              className="input input-bordered input-accent w-full"
             />
           </div>
           <div className="flex flex-col gap-3 md:w-1/2">
             <input
               type="text"
               placeholder="Info"
-              className="input input-info input-bordered w-full"
+              className="input input-bordered input-info w-full"
             />
             <input
               type="text"
               placeholder="Success"
-              className="input input-success input-bordered w-full"
+              className="input input-bordered input-success w-full"
             />
             <input
               type="text"
               placeholder="Warning"
-              className="input input-warning input-bordered w-full"
+              className="input input-bordered input-warning w-full"
             />
             <input
               type="text"
               placeholder="Error"
-              className="input input-error input-bordered w-full"
+              className="input input-bordered input-error w-full"
             />
           </div>
         </div>
-        <div className="navbar bg-neutral text-neutral-content rounded-box">
+        <div className="navbar rounded-box bg-neutral text-neutral-content">
           <div className="flex-none">
-            <button className="btn btn-square btn-ghost">
+            <button className="btn btn-ghost btn-square">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -234,7 +242,7 @@ function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="stroke-info h-6 w-6 flex-shrink-0"
+              className="h-6 w-6 flex-shrink-0 stroke-info"
             >
               <path
                 strokeLinecap="round"
