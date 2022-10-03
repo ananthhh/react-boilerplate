@@ -5,6 +5,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {},
     extend: {},
   },
   plugins: [require('daisyui'), require("tailwindcss-radix")()],
@@ -17,6 +18,7 @@ module.exports = {
           "secondary": "#877ba3",
           "accent": "#ED2D7b",
           "info": "#83cce2",
+          "base-300": "#EBEBEB",
           "success": "#8bc34a",
           "warning": "#f3b265",
           "error": "#f5786f",

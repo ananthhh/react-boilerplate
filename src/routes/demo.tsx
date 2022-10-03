@@ -3,9 +3,8 @@ import { Link, Outlet } from "react-router-dom"
 
 function DemoRoute() {
   return (
-    <div className="h-screen bg-gray-100 px-6 pt-2">
-      <hr />
-      <div className="navbar rounded-md bg-base-100">
+    <div className="h-screen bg-base-300 px-6 pt-2">
+      <div className="navbar rounded-box bg-base-100">
         <Link to="/" className="flex-1">
           <img src="/vite.svg" alt="Vite logo" />
           <img src={reactLogo} alt="React logo" />
