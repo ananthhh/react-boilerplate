@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCoffee } from "@fortawesome/free-solid-svg-icons"
+
 function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
   return (
     <div
@@ -15,7 +18,9 @@ function DaisyPreviewContent(props: { theme: "dark" | "light" }) {
         <button className="btn btn-error">Error</button>
       </div>
       <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4">
-        <button className="btn btn-outline">Default</button>
+        <button className="btn btn-outline">
+          <FontAwesomeIcon icon={faCoffee} /> &nbsp; Default
+        </button>
         <button className="btn btn-outline btn-primary">Primary</button>
         <button className="btn btn-outline btn-secondary">Secondary</button>
         <button className="btn btn-outline btn-accent">Accent</button>
