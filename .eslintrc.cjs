@@ -5,8 +5,7 @@ module.exports = {
   },
   extends: [
     'standard-with-typescript',
-    'plugin:react/recommended',
-    "plugin:react/jsx-runtime",
+    'react-app',
     'prettier'
   ],
   overrides: [
@@ -16,9 +15,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    'react'
-  ],
+  plugins: [],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/triple-slash-reference': 0

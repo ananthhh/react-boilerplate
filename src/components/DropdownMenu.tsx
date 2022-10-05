@@ -15,7 +15,7 @@ function DropdownMenu() {
         <DropdownMenuPrimitive.Content align="start" sideOffset={5} asChild>
           <ul className="menu rounded-box w-48 bg-base-100">
             <li>
-              <a>August 2022</a>
+              <span>August 2022</span>
             </li>
             <li>
               <span>August 2022</span>
