@@ -7,11 +7,16 @@ import "./index.css"
 import DaisyRoute from "./routes/demo-daisy"
 import RadixRoute from "./routes/demo-radix"
 import DemoRoute from "./routes/demo"
+import DocServerRoute from "./routes/doc-server"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+  },
+  {
+    path: "/doc-server",
+    element: <DocServerRoute />,
   },
   {
     path: "/demo",
